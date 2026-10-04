@@ -4,4 +4,4 @@ This is a multi-page static website using the same Artifex header, footer, and s
 
 `admin.html` is a local gallery manager. Its changes are stored only in the current browser local storage; it does not publish changes to other visitors or devices. Large uploaded images may exceed the browser storage limit.
 
-The interactive 3D showroom on Services loads Three.js from a CDN and needs an internet connection. The map, web fonts, and sample gallery photos also use external sources. The contact email is `hello@artilex.com`; the imported workshop phone/address are shown on Contact.
+The interactive 3D showroom on Services loads Three.js from a CDN and needs an internet connection. The map, web fonts, and sample gallery photos also use external sources. The contact email is `hello@artiflex.com`; the imported workshop phone/address are shown on Contact.
