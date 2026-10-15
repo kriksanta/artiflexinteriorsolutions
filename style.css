@@ -83,11 +83,11 @@ body:not(.home-page) .menu-toggle span:first-child{width:40px;height:3px;left:8p
 body:not(.home-page) .menu-toggle span:last-child{width:3px;height:40px;left:26px;top:8px}
 @media(max-width:800px){body:not(.home-page) .brand{width:72px;height:76px}body:not(.home-page) .menu-toggle{width:52px;height:52px}body:not(.home-page) .menu-toggle span:first-child{width:38px;left:7px;top:24px}body:not(.home-page) .menu-toggle span:last-child{height:38px;left:24px;top:7px}}
 
-/* Dedicated close control stays above the side panel on every page. */
-.menu-open .menu-toggle{visibility:hidden}
-.menu-overlay-close{position:absolute;z-index:30;top:18px;right:4.4vw;width:56px;height:56px;padding:0;border:0;background:transparent;cursor:pointer;color:var(--ink)}
-.menu-overlay-close span{position:absolute;left:8px;top:26px;width:40px;height:3px;background:currentColor;border-radius:2px}
-.menu-overlay-close span:first-child{transform:rotate(45deg)}
-.menu-overlay-close span:last-child{transform:rotate(-45deg)}
-.menu-overlay-close:hover{opacity:.65}
-@media(max-width:800px){.menu-overlay-close{top:11px;right:6%;width:52px;height:52px}.menu-overlay-close span{left:7px;top:24px;width:38px}}
+/* Panel covers the header; its brand and open/close control stay above both. */
+.menu-open .site-header{z-index:auto;background:transparent;pointer-events:none}
+.menu-open .brand,.menu-open .menu-toggle{position:relative;z-index:40;pointer-events:auto}
+.menu-open .brand,.menu-open .header-note{visibility:visible}
+.menu-open .header-note{visibility:hidden}
+.menu-open .menu-toggle{visibility:visible}
+.menu-overlay{z-index:20}
+.menu-overlay-close{display:none}
