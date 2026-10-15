@@ -91,3 +91,8 @@ body:not(.home-page) .menu-toggle span:last-child{width:3px;height:40px;left:26p
 .menu-open .menu-toggle{visibility:visible}
 .menu-overlay{z-index:20}
 .menu-overlay-close{display:none}
+
+/* Keep the menu glyph visually clean when focused. */
+.menu-toggle,.menu-toggle:focus,.menu-toggle:focus-visible{appearance:none;border:0;border-radius:0;outline:none;box-shadow:none;background:transparent}
+.menu-toggle::-moz-focus-inner{border:0;padding:0}
+
