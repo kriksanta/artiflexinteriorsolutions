@@ -7,7 +7,7 @@
 .intro-loader{position:fixed;inset:0;z-index:100;background:var(--paper);display:grid;place-items:center;opacity:1;transition:opacity .55s ease;pointer-events:none}
 .intro-loader.is-done{opacity:0}
 .intro-loader-mark{position:absolute;top:50%;left:50%;width:min(300px,58vw);height:auto;max-height:62vh;object-fit:contain;transform:translate(-50%,-50%);will-change:transform}
-.menu-open .site-header{z-index:15;background:transparent}
+.menu-open .site-header{z-index:9;background:transparent}
 .menu-open .menu-toggle{z-index:2}
 .menu-overlay{transition:opacity .5s ease,visibility .5s ease}
 .menu-panel{opacity:0;transform:translateX(38px);transition:transform .5s cubic-bezier(.2,.75,.25,1),opacity .35s ease .08s}
