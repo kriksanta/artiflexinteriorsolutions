@@ -8,8 +8,10 @@ controls.forEach(button=>button.addEventListener('click',()=>showSlide(Number(bu
 if(slides.length)restartTimer();
 const overlay=document.querySelector('.menu-overlay');
 const menuButton=document.querySelector('.menu-toggle');
+const overlayClose=document.querySelector('.menu-overlay-close');
 function setMenu(open){overlay.classList.toggle('open',open);overlay.setAttribute('aria-hidden',String(!open));menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu');menuButton.classList.toggle('is-open',open);document.body.classList.toggle('menu-open',open);if(open)overlay.querySelector('.menu-panel>a').focus();else menuButton.focus();}
 menuButton.addEventListener('click',()=>setMenu(!overlay.classList.contains('open')));
+overlayClose.addEventListener('click',()=>setMenu(false));
 overlay.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMenu(false)));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&overlay.classList.contains('open'))setMenu(false);});
 document.querySelector('#year').textContent=new Date().getFullYear();
