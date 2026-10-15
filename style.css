@@ -74,7 +74,8 @@ html.intro-seen .intro-loader{display:none!important}
 @media(max-width:620px){.home-page .brand{width:78px;height:82px;flex-basis:78px}.home-page .menu-toggle{width:54px;height:54px}.home-page .menu-toggle span:first-child{width:38px;left:8px;top:25px}.home-page .menu-toggle span:last-child{height:38px;left:25px;top:8px}}
 
 /* Interior-page header follows the light hero background; home keeps its own overlay styling. */
-body:not(.home-page) .site-header{background:var(--paper)}
+body:not(.home-page) .site-header{background:var(--cream)}
+body:not(.home-page) .inner-page-hero{background:var(--cream)}
 body:not(.home-page) .brand{width:84px;height:90px}
 body:not(.home-page) .menu-toggle{width:56px;height:56px}
 body:not(.home-page) .menu-toggle span:first-child{width:40px;height:3px;left:8px;top:26px}
